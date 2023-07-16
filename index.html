@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Netflix_Logo_RGB.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Tv Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Recently added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">My List</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav d-flex align-items-start align-items-lg-center ">
+                        <li class="nav-item " style="line-height: normal;">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">KIDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                    class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="profiloNetflix.jpg" alt="profilo" id="profilo">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                <li><a class="dropdown-item" href="#">Esci</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class=" d-flex align-items-center ">
+            <div class="container-fluid d-flex justify-content-start ">
+                <h1>TV Shows</h1>
+                <div class="btn-group  " id="bottone">
+                    <button class="btn btn-secondary  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Genres
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#azione">Action</a></li>
+                        <li><a class="dropdown-item" href="#paura">Horror</a></li>
+                        <li><a class="dropdown-item" href="#tesoro">Fantasy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex text-light" id="icone">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-grid-fill"></i>
+            </div>
+        </div>
+        <section class="slider bg-dark pb-4">
+            <h2 style="color: white;">Trending Now</h2>
+            <div id="original-slider" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="1.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="2.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2">
+                                    <img src="3.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2">
+                                    <img src="4.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="5.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2">
+                                    <img src="6.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="7.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2">
+                                    <img src="7.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="8.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2">
+                                    <img src="9.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2  ">
+                                    <img src="10.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2">
+                                    <img src="11.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6   col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="12.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="13.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2">
+                                    <img src="13.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="14.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="15.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+                                    <img src="16.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+                                    <img src="17.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="18.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="1.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#original-slider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#original-slider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="slider bg-dark pb-4">
+            <h2 style="color: white;">Watch It Again</h2>
+            <div id="original-slider2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid px-4" id="carosello2">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="1.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="2.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="3.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="4.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="5.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="6.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="7.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="7.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="8.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="9.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="10.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="11.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="12.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="13.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="13.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="14.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="15.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="16.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="17.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="18.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="1.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#original-slider2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#original-slider2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider bg-dark pb-4">
+            <h2 style="color: white;">New Releases</h2>
+            <div id="original-slider3" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid px-4" id="carosello3">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="1.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="2.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="3.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="4.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="5.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="6.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="7.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="7.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="8.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="9.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="10.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="11.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="12.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="13.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="13.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="14.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="15.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="16.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="17.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2">
+                                    <img src="18.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="1.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#original-slider3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#original-slider3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider bg-dark pb-4" id="azione">
+            <h2 style="color: white;">Action</h2>
+            <div id="original-slider4" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid px-4" id="carosello4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="rock.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="breaking.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="rake2.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="wick.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="shooter.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="badboys.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="heat.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="heat.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="accountant.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="under.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="exi.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="attacco.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="mercenari.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="ocean.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="ocean.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="jason.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="triple.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="16.png" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="shark.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="bastardi.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="rock.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#original-slider4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#original-slider4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider bg-dark pb-4" id="paura">
+            <h2 style="color: white;">Horror</h2>
+            <div id="original-slider5" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid px-4" id="carosello5">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="horror.jpg" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#original-slider5"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#original-slider5"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider bg-dark pb-4" id="tesoro">
+            <h2 style="color: white;">Fantasy</h2>
+            <div id="original-slider6" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid px-4" id="carosello6">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="container-fluid px-4">
+                            <div class="row gx-2 flex-nowrap">
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                                <div class="col-6  col-sm-2 col-md-4 col-lg-2 ">
+                                    <img src="lotr.webp" class="d-block img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#original-slider6"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#original-slider6"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="container" id="finale">
+        <div class="chiusura col-12 col-sm-6">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+        <div class="ultimi col-10">
+            <div class="link ">
+                <a href="#">Audio and Subtitles</a>
+                <a href="#">Media Center</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="link2 col-3">
+                <a href="#">Audio Description</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="link3 col-3">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="link4 col-3">
+                <a href="#">Gift Cards</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Corporate Information</a>
+            </div>
+        </div>
+        <div class="ancora">
+            <a class="click"><span>Service Code</span></a>
+        </div>
+        <p>© 1997-2019 Netflix, Inc. (i-154564566)</p>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
